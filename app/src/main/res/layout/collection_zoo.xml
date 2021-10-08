@@ -8,8 +8,8 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="15dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="29dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         app:cardCornerRadius="15dp">
@@ -17,20 +17,22 @@
         <LinearLayout
             android:id="@+id/ala"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/ola" />
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ola"
+                android:layout_marginLeft="-7dp"
+                />
 
             <TextView
                 android:id="@+id/trail"
-                android:layout_width="220dp"
+                android:layout_width="212dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginTop="-100dp"
+                android:layout_marginLeft="79dp"
+                android:layout_marginTop="-119dp"
                 android:background="@color/color1"
                 android:gravity="center"
                 android:textStyle="bold"
@@ -38,24 +40,21 @@
 
             <TextView
                 android:id="@+id/route"
-                android:layout_width="220dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="70dp"
+                android:layout_width="212dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="79dp"
                 android:background="@color/color2"
-                android:gravity="center"
                 android:textColor="@color/white"
-                android:textAlignment="center"
                 tools:text="p" />
 
             <TextView
                 android:id="@+id/btn_delete"
                 android:layout_width="60dp"
-                android:layout_height="100dp"
+                android:layout_height="116dp"
                 android:layout_marginLeft="290dp"
-                android:layout_marginTop="-100dp"
+                android:layout_marginTop="-117dp"
                 android:background="@color/details"
                 android:gravity="center"
-                android:textAlignment="center"
                 android:text="X"
                 android:textColor="@color/black" />
         </LinearLayout>
