@@ -4,12 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
     android:background="@color/background"
     tools:context=".AddCollection">
-
+    <ImageView
+        android:id="@+id/iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/baner" />
     <TextView
         android:id="@+id/title"
+        android:padding="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Choose your Trails"
@@ -20,11 +25,13 @@
         />
     <Spinner
         android:id="@+id/spinner"
+        android:padding="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
     <EditText
         android:id="@+id/route"
+        android:padding="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Route you follow "
