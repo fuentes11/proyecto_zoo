@@ -48,6 +48,16 @@
             android:layout_height="70dp"
             android:src="@drawable/senderoasia"
             />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="@color/background"
+            android:src="@drawable/ic_baseline_home_24"
+            android:layout_marginTop="150dp"
+            />
+
     </LinearLayout>
 
 

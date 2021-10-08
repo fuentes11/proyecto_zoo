@@ -18,5 +18,8 @@ class MainActivity : AppCompatActivity() {
         binding.btn2.setOnClickListener {
             startActivity(Intent(this,CollectionMain::class.java))
         }
+        binding.btn1.setOnClickListener {
+            startActivity(Intent(this,TrailsActivity::class.java))
+        }
     }
 }
