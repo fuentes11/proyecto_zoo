@@ -8,9 +8,16 @@
     android:orientation="vertical"
     android:background="@color/background"
     tools:context=".CollectionMain">
+    <ImageView
+        android:id="@+id/iv_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/baner" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_vehicles"
+        android:layout_below="@+id/iv_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -21,11 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="25dp"
         android:backgroundTint="@color/details"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="25dp"
         android:src="@drawable/ic_baseline_add_24" />
 
 </RelativeLayout>
