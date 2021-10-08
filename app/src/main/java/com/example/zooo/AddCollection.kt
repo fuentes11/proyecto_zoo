@@ -1,9 +1,11 @@
 package com.example.zooo
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
+import android.widget.ArrayAdapter
 import androidx.lifecycle.lifecycleScope
 import com.example.zooo.databinding.ActivityAddCollectionBinding
 import com.example.zooo.data.Zoo
@@ -20,13 +22,27 @@ class AddCollection : AppCompatActivity() {
         binding = ActivityAddCollectionBinding.inflate(layoutInflater)
         setContentView(binding.root)
         addListener()
+        addSpinner()
     }
+
+    @SuppressLint("StringFormatInvalid")
+    private fun addSpinner(){
+        val lista= arrayListOf(
+            getString(R.string.sendero_1),
+            getString(R.string.sendero_2),
+            getString(R.string.sendero_3),
+            getString(R.string.sendero_4)
+        )
+        val adapter=ArrayAdapter(this,R.layout.support_simple_spinner_dropdown_item,lista)
+        binding.spinner.adapter=adapter
+    }
+
     private fun addListener() {
         val repository = ZooRepository.getRepository(this)
         binding.btnAdd.setOnClickListener {
             hideKeyboard()
             with(binding) {
-                if (route.text.isBlank()  || trail.text.isBlank()) {
+                if (route.text.isBlank()   ){
                     Snackbar.make(this.root, "Some fields are empty", Snackbar.LENGTH_SHORT).show()
                 }
                 else {
@@ -34,7 +50,7 @@ class AddCollection : AppCompatActivity() {
                         withContext(Dispatchers.IO) {
                             repository.insert(
                                 Zoo(
-                                    name = trail.text.toString(),
+                                    name = spinner.selectedItem.toString(),
                                     route = route.text.toString()
                                 )
                             )
