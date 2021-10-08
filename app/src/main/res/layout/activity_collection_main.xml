@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@color/background"
     tools:context=".CollectionMain">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -22,6 +23,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
+        android:backgroundTint="@color/details"
         android:layout_marginEnd="25dp"
         android:layout_marginBottom="25dp"
         android:src="@drawable/ic_baseline_add_24" />

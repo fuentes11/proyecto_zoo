@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:background="@color/background"
     tools:context=".AddCollection">
 
     <EditText
@@ -24,5 +25,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:backgroundTint="@color/details"
         android:text="Add" />
 </LinearLayout>
