@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">zooo</string>
-    <string name="sendero_1">Sendero 1</string>
-    <string name="sendero_2">Sendero 2</string>
-    <string name="sendero_3">Sendero 3</string>
-    <string name="sendero_4">Sendero 4</string>
+    <string name="sendero_1">Trail Asia</string>
+    <string name="sendero_2">Trail Africa 2</string>
+    <string name="sendero_3">Trail Antartica 3</string>
+    <string name="sendero_4">Trail Aquarium</string>
 
 </resources>
