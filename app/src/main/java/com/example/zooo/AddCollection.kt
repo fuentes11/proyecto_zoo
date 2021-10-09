@@ -1,6 +1,5 @@
 package com.example.zooo
 
-import android.annotation.SuppressLint
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -25,7 +24,6 @@ class AddCollection : AppCompatActivity() {
         addSpinner()
     }
 
-    @SuppressLint("StringFormatInvalid")
     private fun addSpinner(){
         val lista= arrayListOf(
             getString(R.string.sendero_1),
