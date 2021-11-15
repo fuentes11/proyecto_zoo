@@ -56,16 +56,6 @@
         android:textAlignment="center"
         android:textSize="10dp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fb_Home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/asii"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/background"
-        android:src="@drawable/ic_baseline_home_24"
-
-        />
 
     <ImageView
         android:layout_width="wrap_content"

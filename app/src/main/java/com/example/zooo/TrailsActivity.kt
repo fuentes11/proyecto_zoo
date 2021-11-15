@@ -23,6 +23,9 @@ class TrailsActivity: AppCompatActivity() {
         binding.btn01.setOnClickListener {
             startActivity(Intent(this,MainFragment::class.java))
         }
+        binding.fbHome.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
+        }
 
     }
 

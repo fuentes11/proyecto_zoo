@@ -45,16 +45,7 @@
         android:textSize="11dp"
         android:textStyle="bold" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fb_Home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/asii"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/background"
-        android:src="@drawable/ic_baseline_home_24"
 
-        />
 
     <TextView
         android:layout_width="wrap_content"

@@ -23,9 +23,4 @@ class TrailAquarium : Fragment() {
         return binding.root
 
     }
-
-
-
-
-
 }
