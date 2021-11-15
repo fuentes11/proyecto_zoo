@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_asia"
+        android:icon="@drawable/ic_panda_svgrepo_com"
+        android:title="@string/sendero_1" />
+    <item
+        android:id="@+id/navigation_africa"
+        android:icon="@drawable/ic_lion_svgrepo_com"
+        android:title="@string/sendero_2" />
+    <item
+        android:id="@+id/navigation_antartica"
+        android:icon="@drawable/ic_polar_bear_svgrepo_com"
+        android:title="@string/sendero_3" />
+    <item
+        android:id="@+id/navigation_aqua"
+        android:icon="@drawable/ic_fish_svgrepo_com"
+        android:title="@string/sendero_4" />
+</menu>

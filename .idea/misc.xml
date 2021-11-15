@@ -3,12 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3675925925925926" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/drawable/ic_fish_svgrepo_com.xml" value="0.3828125" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/drawable/ic_lion_svgrepo_com.xml" value="0.3828125" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/drawable/ic_panda_svgrepo_com.xml" value="0.3828125" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/drawable/ic_polar_bear_svgrepo_com.xml" value="0.3828125" />
         <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/layout/activity_add_collection.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/layout/activity_collection_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/layout/activity_main_fragment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/layout/activity_trail_africa.xml" value="0.3292572463768116" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/layout/activity_trail_antartica.xml" value="0.3292572463768116" />
         <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/layout/activity_trail_aquarium.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/layout/activity_trail_asia.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/layout/activity_trails.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/layout/collection_zoo.xml" value="0.1757852077001013" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/menu/menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
+        <entry key="..\:/Users/sandoval/AndroidStudioProjects/Practica/proyecto_zoo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
         <entry key="..\:/jason/Documents/proyecto_zoo/app/src/main/res/layout/activity_add_collection.xml" value="0.2957427536231884" />
         <entry key="..\:/jason/Documents/proyecto_zoo/app/src/main/res/layout/activity_collection_main.xml" value="0.2957427536231884" />
         <entry key="..\:/jason/Documents/proyecto_zoo/app/src/main/res/layout/activity_main.xml" value="0.4" />

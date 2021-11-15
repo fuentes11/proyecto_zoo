@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.zooo.databinding.ActivityMainBinding
 import com.example.zooo.databinding.ActivityTrailsBinding
+import com.example.zooo.trails.TrailAfrica
+import com.example.zooo.trails.TrailAntartica
+import com.example.zooo.trails.TrailAquarium
+import com.example.zooo.trails.TrailAsia
 
 class TrailsActivity: AppCompatActivity() {
     private lateinit var binding: ActivityTrailsBinding;
@@ -16,9 +20,10 @@ class TrailsActivity: AppCompatActivity() {
     }
 
     private fun addListeners() {
-       binding.fbHome.setOnClickListener{
-           startActivity(Intent(this,MainActivity::class.java))
-       }
+        binding.btn01.setOnClickListener {
+            startActivity(Intent(this,MainFragment::class.java))
+        }
+
     }
 
 

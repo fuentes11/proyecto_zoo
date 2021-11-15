@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/details"
-    tools:context=".MainActivity">
+    tools:context=".TrailsActivity">
 
 
     <ImageView
@@ -25,29 +25,12 @@
 
 
         <ImageView
+            android:id="@+id/btn01"
             android:layout_width="150dp"
-            android:layout_margin="5dp"
-            android:layout_height="70dp"
-            android:src="@drawable/senderoacuario"
+            android:layout_height="150dp"
+            android:src="@drawable/siu"
             />
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_margin="5dp"
-            android:layout_height="70dp"
-            android:src="@drawable/senderoafrica"
-            />
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_margin="5dp"
-            android:layout_height="70dp"
-            android:src="@drawable/senederi"
-            />
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_margin="5dp"
-            android:layout_height="70dp"
-            android:src="@drawable/senderoasia"
-            />
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fb_Home"
             android:layout_width="wrap_content"
