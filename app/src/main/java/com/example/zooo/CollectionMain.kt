@@ -26,6 +26,7 @@ class CollectionMain : AppCompatActivity() {
         buildCollection()
         addListeners()
     }
+
     private fun buildCollection() {
         val repository = ZooRepository.getRepository(this)
         val layoutManager = GridLayoutManager(this, 1)
@@ -38,9 +39,13 @@ class CollectionMain : AppCompatActivity() {
             }
         }
     }
+
     private fun addListeners() {
         binding.fbAdd.setOnClickListener {
             startActivity(Intent(this, AddCollection::class.java))
+        }
+        binding.fbHome.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 }

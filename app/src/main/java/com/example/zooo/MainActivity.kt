@@ -21,5 +21,8 @@ class MainActivity : AppCompatActivity() {
         binding.btn1.setOnClickListener {
             startActivity(Intent(this,TrailsActivity::class.java))
         }
+        binding.btn3.setOnClickListener {
+            startActivity(Intent(this,Prices::class.java))
+        }
     }
 }

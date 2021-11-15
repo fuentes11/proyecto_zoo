@@ -1,75 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/details"
     tools:context=".trails.TrailAntartica">
 
-    <ImageView
-        android:id="@+id/iv_banner"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:src="@drawable/baner" />
-
-    <TextView
-        android:id="@+id/AsiaTrail"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/iv_banner"
-        android:background="@color/name"
-        android:gravity="center"
-        android:text="@string/sendero_3"
-        android:textSize="15dp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/asii"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/AsiaTrail"
-        android:layout_marginTop="-5dp"
-        android:text="@string/aqu"
-        android:textSize="12dp" />
-
-    <TextView
-        android:id="@+id/si"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/iv_banner"
-        android:layout_toRightOf="@+id/asii"
-        android:text="@string/shar"
-        android:textAlignment="center"
-        android:textColor="@color/name2"
-        android:textSize="11dp"
-        android:textStyle="bold" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fb_Home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/asii"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/background"
-        android:src="@drawable/ic_baseline_home_24"
-
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/si"
-        android:layout_marginBottom="50dp"
-        android:layout_toRightOf="@+id/asii"
-        android:text="@string/acu"
-        android:textAlignment="center"
-        android:textSize="10dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_below="@id/asii"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/pingo" />
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
