@@ -12,19 +12,36 @@
         <activity
             android:name=".MainFragment"
             android:exported="false" />
-
+        <activity
+            android:name=".Prices"
+            android:exported="false" />
+        <activity
+            android:name=".trails.TrailAquarium"
+            android:exported="true" />
+        <activity
+            android:name=".trails.TrailAfrica"
+            android:exported="true" />
+        <activity
+            android:name=".trails.TrailAntartica"
+            android:exported="true" />
+        <activity
+            android:name=".trails.TrailAsia"
+            android:exported="true" />
+        <activity
+            android:name=".SenderoAsia"
+            android:exported="true" />
         <activity
             android:name=".TrailsActivity"
             android:exported="true" />
-
+        <activity
+            android:name=".Trails"
+            android:exported="true" />
         <activity
             android:name=".CollectionMain"
             android:exported="true" />
         <activity
             android:name=".AddCollection"
             android:exported="true" />
-        <activity android:name=".Prices"
-            android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
