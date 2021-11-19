@@ -4,10 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.example.zooo.databinding.ActivityMainFragmentBinding
-import com.example.zooo.trails.TrailAfrica
-import com.example.zooo.trails.TrailAntartica
-import com.example.zooo.trails.TrailAquarium
-import com.example.zooo.trails.TrailAsia
+import com.example.zooo.trails.*
 
 class MainFragment : AppCompatActivity() {
     private lateinit var binding: ActivityMainFragmentBinding
@@ -32,6 +29,9 @@ class MainFragment : AppCompatActivity() {
                 }
                 R.id.navigation_aqua -> {
                     openFragment(TrailAquarium())
+                }
+                R.id.navigation_reptile -> {
+                    openFragment(TrailReptile())
                 }
             }
             true
