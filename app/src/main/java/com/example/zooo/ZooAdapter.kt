@@ -16,19 +16,22 @@ import kotlin.Double as Double
 
 @Suppress("MemberVisibilityCanBePrivate")
 class ZooAdapter(private val list: List<Zoo>) :
-    RecyclerView.Adapter<ZooAdapter.VehiclesViewHolder>() {
-    class VehiclesViewHolder(val binding: CollectionZooBinding) :
+    RecyclerView.Adapter<ZooAdapter.ZooViewHolder>() {
+    class ZooViewHolder(val binding: CollectionZooBinding) :
         RecyclerView.ViewHolder(binding.root)
-        lateinit var view: View
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VehiclesViewHolder {
-        val binding = CollectionZooBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return VehiclesViewHolder(binding)
+
+    lateinit var view: View
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ZooViewHolder {
+        val binding =
+            CollectionZooBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return ZooViewHolder(binding)
     }
-    override fun onBindViewHolder(holder: VehiclesViewHolder, position: Int, ) {
+
+    override fun onBindViewHolder(holder: ZooViewHolder, position: Int) {
         val repository = ZooRepository.getRepository(holder.binding.root.context)
 
-        holder.binding.btnDelete.setOnClickListener{
-            GlobalScope.launch(Dispatchers.IO){
+        holder.binding.btnDelete.setOnClickListener {
+            GlobalScope.launch(Dispatchers.IO) {
                 repository.deleteById(list[position].id)
             }
         }
@@ -37,5 +40,6 @@ class ZooAdapter(private val list: List<Zoo>) :
             route.text = list[position].route
         }
     }
-        override fun getItemCount(): Int = list.size
+
+    override fun getItemCount(): Int = list.size
 }

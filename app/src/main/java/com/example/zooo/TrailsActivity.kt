@@ -10,7 +10,7 @@ import com.example.zooo.trails.TrailAntartica
 import com.example.zooo.trails.TrailAquarium
 import com.example.zooo.trails.TrailAsia
 
-class TrailsActivity: AppCompatActivity() {
+class TrailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityTrailsBinding;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,10 +21,10 @@ class TrailsActivity: AppCompatActivity() {
 
     private fun addListeners() {
         binding.btn01.setOnClickListener {
-            startActivity(Intent(this,MainFragment::class.java))
+            startActivity(Intent(this, MainFragment::class.java))
         }
         binding.fbHome.setOnClickListener {
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
     }

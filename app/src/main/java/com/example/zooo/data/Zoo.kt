@@ -3,6 +3,7 @@ package com.example.zooo.data
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+
 @Entity(tableName = "Zoo_table")
 data class Zoo(
     @PrimaryKey(autoGenerate = true)
@@ -12,4 +13,4 @@ data class Zoo(
     @ColumnInfo(name = "route")
     val route: String,
 
-)
+    )

@@ -16,13 +16,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun addListeners() {
         binding.btn2.setOnClickListener {
-            startActivity(Intent(this,CollectionMain::class.java))
+            startActivity(Intent(this, CollectionMain::class.java))
         }
         binding.btn1.setOnClickListener {
-            startActivity(Intent(this,TrailsActivity::class.java))
+            startActivity(Intent(this, TrailsActivity::class.java))
         }
         binding.btn3.setOnClickListener {
-            startActivity(Intent(this,Prices::class.java))
+            startActivity(Intent(this, Prices::class.java))
         }
     }
 }

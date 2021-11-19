@@ -17,10 +17,10 @@ class MainFragment : AppCompatActivity() {
         setContentView(binding.root)
         supportFragmentManager
             .beginTransaction()
-            .add(R.id.nav_host_fragment_activity_main, TrailAsia())
+            .add(R.id.fragment_activity_main, TrailAsia())
             .commit()
         binding.navView.setOnItemSelectedListener { view ->
-            when(view.itemId) {
+            when (view.itemId) {
                 R.id.navigation_asia -> {
                     openFragment(TrailAsia())
                 }
@@ -35,11 +35,14 @@ class MainFragment : AppCompatActivity() {
                 }
             }
             true
+
         }
+        onBackPressed()
     }
+
     private fun openFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.nav_host_fragment_activity_main, fragment)
+        transaction.replace(R.id.fragment_activity_main, fragment)
         transaction.commit()
 
     }

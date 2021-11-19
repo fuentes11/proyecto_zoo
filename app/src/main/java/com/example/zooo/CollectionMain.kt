@@ -32,7 +32,7 @@ class CollectionMain : AppCompatActivity() {
         val layoutManager = GridLayoutManager(this, 1)
         lifecycleScope.launch {
             repository.allZoo.collect { Zoo ->
-                binding.rvVehicles.apply {
+                binding.rvZoo.apply {
                     adapter = ZooAdapter(Zoo)
                     setLayoutManager(layoutManager)
                 }
