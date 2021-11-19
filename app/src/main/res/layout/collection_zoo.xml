@@ -7,9 +7,9 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="115dp"
-        android:layout_marginLeft="29dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         app:cardCornerRadius="15dp">
@@ -23,9 +23,8 @@
             <ImageView
                 android:layout_width="86dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ola"
                 android:layout_marginLeft="-7dp"
-                />
+                android:src="@drawable/ola" />
 
             <TextView
                 android:id="@+id/trail"

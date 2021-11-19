@@ -24,15 +24,15 @@ class AddCollection : AppCompatActivity() {
         addSpinner()
     }
 
-    private fun addSpinner(){
-        val lista= arrayListOf(
+    private fun addSpinner() {
+        val lista = arrayListOf(
             getString(R.string.sendero_1),
             getString(R.string.sendero_2),
             getString(R.string.sendero_3),
             getString(R.string.sendero_4)
         )
-        val adapter=ArrayAdapter(this,R.layout.support_simple_spinner_dropdown_item,lista)
-        binding.spinner.adapter=adapter
+        val adapter = ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, lista)
+        binding.spinner.adapter = adapter
     }
 
     private fun addListener() {
@@ -40,10 +40,9 @@ class AddCollection : AppCompatActivity() {
         binding.btnAdd.setOnClickListener {
             hideKeyboard()
             with(binding) {
-                if (route.text.isBlank()   ){
+                if (route.text.isBlank()) {
                     Snackbar.make(this.root, "Some fields are empty", Snackbar.LENGTH_SHORT).show()
-                }
-                else {
+                } else {
                     lifecycleScope.launch {
                         withContext(Dispatchers.IO) {
                             repository.insert(
@@ -59,6 +58,7 @@ class AddCollection : AppCompatActivity() {
             }
         }
     }
+
     private fun hideKeyboard() {
         val manager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
         manager.hideSoftInputFromWindow(binding.root.windowToken, 0)

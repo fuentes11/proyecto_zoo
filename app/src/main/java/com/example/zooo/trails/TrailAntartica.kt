@@ -23,5 +23,5 @@ class TrailAntartica : Fragment() {
         return binding.root
     }
 
-    }
+}
 

@@ -3,93 +3,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/background"
+    android:orientation="vertical"
     tools:context=".Prices">
+
     <ImageView
         android:id="@+id/iv_banner"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginTop="-15dp"
         android:src="@drawable/baner" />
+
     <TableLayout
         android:layout_width="wrap_content"
-        android:layout_margin="20dp"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:stretchColumns="1">
-        <TableRow
-            android:background="@color/color2">
+
+        <TableRow android:background="@color/color2">
+
             <TextView
                 android:layout_column="1"
                 android:padding="3dip"
                 android:text="Boletos"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:gravity="right"
                 android:padding="3dip"
                 android:text="Precios"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </TableRow>
+
         <View
             android:layout_height="2dip"
             android:background="#000000" />
+
         <TableRow>
+
             <TextView
                 android:layout_column="1"
                 android:padding="3dip"
-                android:text="Adultos"
-                android:background="#FFFF"/>
+                android:text="Adultos" />
+
             <TextView
                 android:gravity="right"
                 android:padding="3dip"
-                android:text="$20"
-                android:background="#FFFF"/>
+                android:text="$20" />
         </TableRow>
+
         <View
             android:layout_height="2dip"
             android:background="#000000" />
+
         <TableRow>
+
             <TextView
                 android:layout_column="1"
                 android:padding="3dip"
-                android:text="Niños"
-                android:background="#FFFF"/>
+
+                android:text="Niños" />
+
             <TextView
                 android:gravity="right"
                 android:padding="3dip"
-                android:text="$15"
-                android:background="#FFFF"/>
+                android:text="$15" />
         </TableRow>
+
         <View
             android:layout_height="2dip"
             android:background="#000000" />
-        <TableRow
-            android:background="#FFFF">
+
+        <TableRow>
+
             <TextView
                 android:layout_column="1"
                 android:padding="3dip"
                 android:text="Estudiantes" />
+
             <TextView
                 android:layout_gravity="right"
                 android:padding="3dip"
-                android:text="$12"
-                android:background="#FFFF"/>
+                android:text="$12" />
         </TableRow>
+
         <View
             android:layout_height="2dip"
             android:background="#000000" />
-        <TableRow
-            android:background="#FFFF">
+
+        <TableRow>
+
             <TextView
                 android:layout_column="1"
                 android:padding="3dip"
                 android:text="Adultos de la tercera edad" />
+
             <TextView
                 android:gravity="right"
                 android:padding="3dip"
                 android:text="$10" />
         </TableRow>
+
         <View
             android:layout_height="2dip"
             android:background="#000000" />
@@ -100,10 +114,10 @@
         android:id="@+id/fb_Home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
         android:layout_marginTop="320dp"
         android:layout_marginEnd="25dp"
         android:backgroundTint="@color/details"
-        android:src="@drawable/ic_baseline_home_24"
-        android:layout_gravity="bottom"/>
+        android:src="@drawable/ic_baseline_home_24" />
 
 </LinearLayout>

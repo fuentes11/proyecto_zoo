@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:background="@color/background"
+    android:orientation="vertical"
     tools:context=".CollectionMain">
+
     <ImageView
         android:id="@+id/iv_banner"
         android:layout_width="wrap_content"
@@ -16,10 +16,10 @@
         android:src="@drawable/baner" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_vehicles"
-        android:layout_below="@+id/iv_banner"
+        android:id="@+id/rv_zoo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_banner" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fb_Home"
