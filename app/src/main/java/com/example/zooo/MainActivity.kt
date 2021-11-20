@@ -23,5 +23,8 @@ class MainActivity : AppCompatActivity() {
         binding.btn3.setOnClickListener {
             startActivity(Intent(this, Prices::class.java))
         }
+        binding.btn4.setOnClickListener {
+            startActivity(Intent(this, RulesActivity::class.java))
+        }
     }
 }
