@@ -23,10 +23,8 @@ class ZooRepository(private val ZooDao: ZooDao) {
     suspend fun insert(Zoo: Zoo) {
         ZooDao.insert(Zoo)
     }
+
     suspend fun deleteById(id: Int) {
         ZooDao.deleteById(id)
-    }
-    suspend fun update(name:String,route:String,id:Int){
-        ZooDao.update(name,route,id)
     }
 }
