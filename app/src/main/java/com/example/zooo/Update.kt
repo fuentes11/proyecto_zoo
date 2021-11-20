@@ -26,10 +26,12 @@ class Update : AppCompatActivity() {
 
     private fun addSpinner() {
         val lista = arrayListOf(
-            getString(R.string.sendero_1),
-            getString(R.string.sendero_2),
-            getString(R.string.sendero_3),
-            getString(R.string.sendero_4)
+                getString(R.string.sendero_1),
+                getString(R.string.sendero_2),
+                getString(R.string.sendero_3),
+                getString(R.string.sendero_5),
+                getString(R.string.sendero_4)
+
         )
         val adapter = ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, lista)
         binding.spinner.adapter = adapter
@@ -37,7 +39,7 @@ class Update : AppCompatActivity() {
 
     private fun addListener() {
         val repository = ZooRepository.getRepository(this)
-        val  intent = Intent(this, CollectionMain::class.java)
+        val intent = Intent(this, CollectionMain::class.java)
 
         binding.Update.setOnClickListener {
 
@@ -48,9 +50,9 @@ class Update : AppCompatActivity() {
                     lifecycleScope.launch {
                         withContext(Dispatchers.IO) {
                             repository.update(
-                                name =spinner.selectedItem.toString(),
-                                route = nameu.toString(),
-                                id =
+                                    name = spinner.selectedItem.toString(),
+                                    route = nameu.toString(),
+                                    id = taskId
                             )
                         }
                         onBackPressed()

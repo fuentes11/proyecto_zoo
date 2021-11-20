@@ -26,10 +26,11 @@ class AddCollection : AppCompatActivity() {
 
     private fun addSpinner() {
         val lista = arrayListOf(
-            getString(R.string.sendero_1),
-            getString(R.string.sendero_2),
-            getString(R.string.sendero_3),
-            getString(R.string.sendero_4)
+                getString(R.string.sendero_1),
+                getString(R.string.sendero_2),
+                getString(R.string.sendero_3),
+                getString(R.string.sendero_5),
+                getString(R.string.sendero_4)
         )
         val adapter = ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, lista)
         binding.spinner.adapter = adapter
@@ -46,11 +47,11 @@ class AddCollection : AppCompatActivity() {
                     lifecycleScope.launch {
                         withContext(Dispatchers.IO) {
                             repository.insert(
-                                Zoo(
+                                    Zoo(
 
-                                    name = spinner.selectedItem.toString(),
-                                    route = route.text.toString()
-                                )
+                                            name = spinner.selectedItem.toString(),
+                                            route = route.text.toString()
+                                    )
                             )
                         }
                         onBackPressed()
