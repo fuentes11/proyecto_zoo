@@ -1,8 +1,11 @@
 package com.example.zooo
 
+import android.app.ListActivity
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.startActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
 import com.example.zooo.databinding.CollectionZooBinding
@@ -29,12 +32,16 @@ class ZooAdapter(private val list: List<Zoo>) :
 
     override fun onBindViewHolder(holder: ZooViewHolder, position: Int) {
         val repository = ZooRepository.getRepository(holder.binding.root.context)
-
+        val context = holder.binding.root.context
         holder.binding.btnDelete.setOnClickListener {
             GlobalScope.launch(Dispatchers.IO) {
                 repository.deleteById(list[position].id)
             }
         }
+        holder.binding.aver.setOnClickListener {
+            context.startActivity(Intent(context, Update::class.java))
+        }
+
         with(holder.binding) {
             trail.text = list[position].name
             route.text = list[position].route
