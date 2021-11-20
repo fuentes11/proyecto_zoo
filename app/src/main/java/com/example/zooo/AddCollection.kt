@@ -23,7 +23,6 @@ class AddCollection : AppCompatActivity() {
         addListener()
         addSpinner()
     }
-
     private fun addSpinner() {
         val lista = arrayListOf(
                 getString(R.string.sendero_1),
@@ -35,7 +34,6 @@ class AddCollection : AppCompatActivity() {
         val adapter = ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, lista)
         binding.spinner.adapter = adapter
     }
-
     private fun addListener() {
         val repository = ZooRepository.getRepository(this)
         binding.btnAdd.setOnClickListener {
@@ -48,7 +46,6 @@ class AddCollection : AppCompatActivity() {
                         withContext(Dispatchers.IO) {
                             repository.insert(
                                     Zoo(
-
                                             name = spinner.selectedItem.toString(),
                                             route = route.text.toString()
                                     )
@@ -60,7 +57,6 @@ class AddCollection : AppCompatActivity() {
             }
         }
     }
-
     private fun hideKeyboard() {
         val manager = getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
         manager.hideSoftInputFromWindow(binding.root.windowToken, 0)

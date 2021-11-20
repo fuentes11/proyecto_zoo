@@ -35,15 +35,12 @@ class MainFragment : AppCompatActivity() {
                 }
             }
             true
-
         }
         onBackPressed()
     }
-
     private fun openFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.fragment_activity_main, fragment)
         transaction.commit()
-
     }
 }

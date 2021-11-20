@@ -17,10 +17,8 @@ class TrailAquarium : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-
     ): View? {
         binding = ActivityTrailAquariumBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 }

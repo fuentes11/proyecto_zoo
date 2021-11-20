@@ -12,5 +12,4 @@ data class Zoo(
         val name: String,
         @ColumnInfo(name = "route")
         val route: String,
-
         )

@@ -22,6 +22,5 @@ class TrailAntartica : Fragment() {
         binding = ActivityTrailAntarticaBinding.inflate(inflater, container, false)
         return binding.root
     }
-
 }
 

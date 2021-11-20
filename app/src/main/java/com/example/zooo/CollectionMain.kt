@@ -26,7 +26,6 @@ class CollectionMain : AppCompatActivity() {
         buildCollection()
         addListeners()
     }
-
     private fun buildCollection() {
         val repository = ZooRepository.getRepository(this)
         val layoutManager = GridLayoutManager(this, 1)

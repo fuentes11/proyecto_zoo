@@ -29,7 +29,6 @@ class ZooAdapter(private val list: List<Zoo>) :
             CollectionZooBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ZooViewHolder(binding)
     }
-
     override fun onBindViewHolder(holder: ZooViewHolder, position: Int) {
         val repository = ZooRepository.getRepository(holder.binding.root.context)
         val context = holder.binding.root.context
@@ -38,15 +37,10 @@ class ZooAdapter(private val list: List<Zoo>) :
                 repository.deleteById(list[position].id)
             }
         }
-        holder.binding.aver.setOnClickListener {
-            context.startActivity(Intent(context, Update::class.java))
-        }
-
         with(holder.binding) {
             trail.text = list[position].name
             route.text = list[position].route
         }
     }
-
     override fun getItemCount(): Int = list.size
 }

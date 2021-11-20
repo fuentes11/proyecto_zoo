@@ -18,12 +18,10 @@ class ZooRepository(private val ZooDao: ZooDao) {
             }
         }
     }
-
     val allZoo: Flow<List<Zoo>> = ZooDao.getAlphabetizedZoo()
     suspend fun insert(Zoo: Zoo) {
         ZooDao.insert(Zoo)
     }
-
     suspend fun deleteById(id: Int) {
         ZooDao.deleteById(id)
     }

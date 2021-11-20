@@ -13,7 +13,6 @@ class Prices : AppCompatActivity() {
         setContentView(binding.root)
         addListeners()
     }
-
     private fun addListeners() {
         binding.fbHome.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))

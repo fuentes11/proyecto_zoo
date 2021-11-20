@@ -10,7 +10,6 @@ import com.example.zooo.data.Zoo
 @Database(entities = [Zoo::class], version = 1, exportSchema = false)
 abstract class ZooDataBase : RoomDatabase() {
     abstract fun ZooDao(): ZooDao
-
     companion object {
         @Volatile
         private var INSTANCE: ZooDataBase? = null

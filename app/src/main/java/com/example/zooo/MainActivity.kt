@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         addListeners()
     }
-
     private fun addListeners() {
         binding.btn2.setOnClickListener {
             startActivity(Intent(this, CollectionMain::class.java))
@@ -24,7 +23,5 @@ class MainActivity : AppCompatActivity() {
         binding.btn3.setOnClickListener {
             startActivity(Intent(this, Prices::class.java))
         }
-
     }
-
 }

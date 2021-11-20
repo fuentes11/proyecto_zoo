@@ -18,7 +18,6 @@ class TrailsActivity : AppCompatActivity() {
         setContentView(binding.root)
         addListeners()
     }
-
     private fun addListeners() {
         binding.btn01.setOnClickListener {
             startActivity(Intent(this, MainFragment::class.java))
@@ -26,8 +25,5 @@ class TrailsActivity : AppCompatActivity() {
         binding.fbHome.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
-
     }
-
-
 }
