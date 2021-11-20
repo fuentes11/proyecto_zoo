@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Zooo">
         <activity
+            android:name=".RulesActivity"
+            android:exported="false" />
+        <activity
             android:name=".trails.TrailReptile"
             android:exported="false" />
         <activity
