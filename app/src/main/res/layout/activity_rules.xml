@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".Prices">
+
+    <ImageView
+        android:id="@+id/iv_banner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="160dp"
+        android:src="@drawable/baner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_banner"
+        android:layout_margin="20dp"
+        android:background="@color/rules"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_banner"
+            android:layout_gravity="center"
+            android:text="@string/titu"
+            android:textColor="@color/name2"
+            android:textSize="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:text="@string/rules"
+            android:textColor="@color/te" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:text="@string/rule2"
+            android:textColor="@color/te" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:text="@string/rule4"
+            android:textColor="@color/te" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:text="@string/rule3"
+            android:textColor="@color/te" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/details"
+            android:src="@drawable/ic_baseline_home_24" />
+    </LinearLayout>
+
+
+</RelativeLayout>
