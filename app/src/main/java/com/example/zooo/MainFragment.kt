@@ -36,7 +36,6 @@ class MainFragment : AppCompatActivity() {
             }
             true
         }
-        onBackPressed()
     }
     private fun openFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
