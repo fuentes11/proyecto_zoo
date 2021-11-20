@@ -19,7 +19,8 @@
         android:id="@+id/rv_zoo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/iv_banner" />
+        android:layout_below="@+id/iv_banner"
+        android:layout_marginTop="1dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fb_Home"
